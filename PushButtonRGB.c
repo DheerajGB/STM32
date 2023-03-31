@@ -115,6 +115,7 @@ int main(void)
 		  {
 			  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_3,GPIO_PIN_SET);
 			  printf("%s\n", "Button Pressed, only RED LED ON");
+			  HAL_Delay(1000);
 
 			  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_4,GPIO_PIN_RESET);
 			  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5,GPIO_PIN_RESET);
@@ -124,6 +125,7 @@ int main(void)
 		  	  {
 		  		  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_4,GPIO_PIN_SET);
 		  		  printf("%s\n", "Button Pressed, only GREEN LED ON");
+		  		HAL_Delay(1000);
 
 		  		 HAL_GPIO_WritePin(GPIOB, GPIO_PIN_3,GPIO_PIN_RESET);
 		  		 HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5,GPIO_PIN_RESET);
@@ -132,6 +134,7 @@ int main(void)
 		 		  	  {
 		 		  		  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5,GPIO_PIN_SET);
 		 		  		  printf("%s\n", "Button  Pressed, only BLUE LED ON");
+		 		  		HAL_Delay(1000);
 
 		 		  		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_3,GPIO_PIN_RESET);
 		 		  		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_4,GPIO_PIN_RESET);
