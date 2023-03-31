@@ -112,25 +112,25 @@ int main(void)
 	  if(irvalue==0)
 	  		  {
 	  			  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_4,GPIO_PIN_SET);
-	  			  printf("Obstacle Detected");
+	  			  printf("Obstacle Detected %d\n",irvalue);
 	  			  HAL_Delay(1000);
 	  		  }
 	  else if(irvalue==1)
 		  		  {
 		  			  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_4,GPIO_PIN_RESET);
-		  			  printf("Obstacle NOT Detected");
+		  			  printf("Obstacle NOT Detected %d\n",irvalue);
 		  			HAL_Delay(1000);
 		  		  }
 	  else if(touchvalue==0)
 	 	  		  {
 	 	  			  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5,GPIO_PIN_SET);
-	 	  			  printf("Touch Detected");
+	 	  			  printf("Touch Detected %d\n",touchvalue);
 	 	  			HAL_Delay(1000);
 	 	  		  }
 	  else if(touchvalue==1)
 	 		  		  {
 	 		  			  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5,GPIO_PIN_RESET);
-	 		  			  printf("Touch NOT Detected");
+	 		  			  printf("Touch NOT Detected %d\n",touchvalue);
 	 		  			HAL_Delay(1000);
 	 		  		  }
     /* USER CODE BEGIN 3 */
